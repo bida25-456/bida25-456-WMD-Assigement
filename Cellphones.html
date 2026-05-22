@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop the latest smartphones at Delroy Electronics Gaborone." />
   <title>Delroy Electronics | Cellphones</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Cellphones</h1>
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-        <li><a href="Cellphones.html">About</a></li>
-        <li><a href="Computers.html">Laptops</a></li>
-        <li><a href="Contacts.html">Contact</a></li>
-        <li><a href="Gaming.html">Gaming</a></li>
-        <li><a href="Headphones.html">Headphones</a></li>
-        <li><a href="Photography & Videography.html">Photography & Videography</a></li>
-        <li><a href="Products.html">Products</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section>
-    <h2>Latest Smartphones</h2>
-    <ul>
-      <li>Flagship Phone – High performance and sleek design</li>
-      <li>Budget Phone – Affordable and reliable</li>
-      <li>Camera Phone – Perfect for photography lovers</li>
-    </ul>
-  </section>
+  <div class="top-bar">🔥 Free delivery on orders over BWP 500 | Shop Now & Save Big!</div>
 
-  <footer>
-    <p>&copy; 2026 Delroy Electronics. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">⚡ Delroy Electronics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Computers.html">Laptops</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Cellphones.html">Phones</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gaming.html">Gaming</a></li>
+          <li class="nav-item"><a class="nav-link" href="Headphones.html">Headsets</a></li>
+          <li class="nav-item"><a class="nav-link" href="Photography & Videography.html">Photo</a></li>
+          <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacts.html">Contact</a></li>
+        </ul>
+        <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
+          🛒 Cart <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1>📱 Cellphones</h1>
+      <p>The latest smartphones from top brands</p>
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a> › <span>Cellphones</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-img">📱<span class="product-badge">NEW</span></div>
+            <div class="product-body">
+              <div class="product-brand">Samsung</div>
+              <div class="product-name">Galaxy S24 Ultra</div>
+              <div class="product-desc">200MP camera, 12GB RAM, 5G, S-Pen included</div>
+              <div class="product-rating">★★★★★ <span>(89)</span></div>
+              <div class="product-price">BWP 9,200 <span class="old-price">BWP 10,500</span></div>
+              <button class="btn-add-cart" onclick="handleAddToCart(this,'s24-ultra','Samsung Galaxy S24 Ultra',9200,'📱')">🛒 Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div
