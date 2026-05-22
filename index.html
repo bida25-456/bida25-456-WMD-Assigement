@@ -1,34 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Delroy Electronics - Your premier electronics store in Gaborone." />
   <title>Delroy Electronics | Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- Your own CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Delroy Electronics</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Cellphones.html">Cellphones</a></li>
-        <li><a href="Computers.html">Laptops</a></li>
-        <li><a href="Contacts.html">Contact</a></li>
-        <li><a href="Gaming.html">Gaming</a></li>
-        <li><a href="Headphones.html">Headphones</a></li>
-        <li><a href="Photography & Videography.html">Photography & Videography</a></li>
-        <li><a href="Products.html">Products</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section>
-    <h2>Welcome to Delroy Electronics</h2>
-    <p>Your one-stop shop for tech gadgets and accessories.</p>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    🔥 Free delivery on orders over BWP 500 | Shop Now & Save Big!
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+      <!-- LOGO / BRAND -->
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        ⚡ Delroy Electronics
+      </a>
+
+      <!-- HAMBURGER for mobile -->
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NAV LINKS -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Computers.html">Laptops</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cellphones.html">Phones</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gaming.html">Gaming</a></li>
+          <li class="nav-item"><a class="nav-link" href="Headphones.html">Headsets</a></li>
+          <li class="nav-item"><a class="nav-link" href="Photography & Videography.html">Photo</a></li>
+          <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacts.html">Contact</a></li>
+        </ul>
+
+        <!-- CART BUTTON -->
+        <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
+          🛒 Cart
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+          <div class="hero-badge">⚡ New Arrivals 2026</div>
+          <h1>Next-Level <span>Tech</span><br>at Your Fingertips</h1>
+          <p>Gaborone's finest electronics store. Laptops, phones, gaming gear and more — at unbeatable prices.</p>
+          <div class="hero-btns">
+            <a href="Products.html" class="btn-primary-custom">Shop Now</a>
+            <a href="Contacts.html" class="btn-outline-custom">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <div class="hero-image-box">💻</div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
+  <!-- FEATURES STRIP -->
+  <div class="features-strip">
+    <div class="container">
+      <div class="row g-3 text-white">
+        <div class="col-6 col-md-3 d-flex align-items-center gap-2">
+          <span style="font-size:1.8rem">🚚</span>
+          <div><strong>Fast Delivery</strong><br><small>Within Gaborone</small></div>
+        </div>
+        <div class="col-6 col-md-3 d-flex align-items-center gap-2">
+          <span style="font-size:1.8rem">🛡️</span>
+          <div><strong>Warranty</strong><br><small>All products covered</small></div>
+        </div>
+        <div class="col-6 col-md-3 d-flex align-items-center gap-2">
+          <span style="font-size:1.8rem">💳</span>
+          <div><strong>Easy Payment</strong><br><small>Multiple options</small></div>
+        </div>
+        <div class="col-6 col-md-3 d-flex align-items-center gap-2">
+          <span style="font-size:1.8rem">📞</span>
+          <div><strong>24/7 Support</strong><br><small>Always here for you</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Shop by Category</h2>
+        <p>Browse our wide range of electronics</p>
+        <div class="title-line"></div>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Computers.html" class="category-card">
+            <span class="category-icon">💻</span>
+            <h5>Laptops</h5><p>50+ models</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Cellphones.html" class="category-card">
+            <span class="category-icon">📱</span>
+            <h5>Phones</h5><p>Latest models</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Gaming.html" class="category-card">
+            <span class="category-icon">🎮</span>
+            <h5>Gaming</h5><p>Consoles & gear</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Headphones.html" class="category-card">
+            <span class="category-icon">🎧</span>
+            <h5>Headsets</h5><p>Pro audio</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Photography & Videography.html" class="category-card">
+            <span class="category-icon">📷</span>
+            <h5>Photography</h5><p>Cameras & more</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="Products.html" class="category-card">
+            <span class="category-icon">🛍️</span>
+            <h5>All Products</h5><p>Everything</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Hand-picked bestsellers just for you</p>
+        <div class="title-line"></div>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-img">
+              💻 <span class="product-badge">HOT</span>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Dell</div>
+              <div class="product-name">XPS 15 Laptop</div>
+              <div class="product-desc">Intel i7, 16GB RAM, 512GB SSD</div>
+              <div class="product-rating">★★★★★ <span>(128)</span></div>
+              <div class="product-price">BWP 12,500 <span class="old-price">BWP 14,000</span></div>
+              <button class="btn-add-cart"
+                onclick="handleAddToCart(this,'dell-xps','Dell XPS 15',12500,'💻')">
+                🛒 Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-img">
+              📱 <span class="product-badge">NEW</span>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Samsung</div>
+              <div class="product-name">Galaxy S24 Ultra</div>
+              <div class="product-desc">200MP camera, 12GB RAM, 5G</div>
+              <div class="product-rating">★★★★★ <span>(89)</span></div>
+              <div class="product-price">BWP 9,200 <span class="old-price">BWP 10,500</span></div>
+              <button class="btn-add-cart"
+                onclick="handleAddToCart(this,'s24','Samsung S24 Ultra',9200,'📱')">
+                🛒 Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-img">
+              🎮 <span class="product-badge">SALE</span>
+            </div>
+            <div class="product-body">
+              <div class="product-brand">Sony</div>
+              <div class="product-name">PlayStation 5</div>
+              <div class="product-desc">825GB SSD, 4K Gaming, DualSense</div>
+              <div class="product-rating">★★★★★ <span>(256)</span></div>
+              <div class="product-price">BWP 7,800 <span class="old-price">BWP 9,000</span></div>
+              <button class="btn-add-cart"
+                onclick="handleAddToCart(this,'ps5','PlayStation 5',7800,'🎮')">
+                🛒 Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card">
+            <div class="product-img">🎧</div>
+            <div class="product-body">
+              <div class="product-brand">Sony</div>
+              <div class="product-name">WH-1000XM5</div>
+              <div class="product-desc">ANC, 30h battery, Hi-Res audio</div>
+              <div class="product-rating">★★★★☆ <span>(74)</span></div>
+              <div class="product-price">BWP 3,400 <span class="old-price">BWP 4,000</span></div>
+              <button class="btn-add-cart"
+                onclick="handleAddToCart(this,'xm5','Sony WH-1000XM5',3400,'🎧')">
+                🛒 Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-4">
+        <a href="Products.html" class="btn-primary-custom">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Delroy Electronics. All rights reserved.</p>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand">
+            <div class="brand-name">⚡ Delroy Electronics</div>
+            <p>Your trusted electronics partner in Gaborone. Quality products, great prices, outstanding service.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="footer-heading">Categories</div>
+          <ul class="footer-links">
+            <li><a href="Computers.html">Laptops</a></li>
+            <li><a href="Cellphones.html">Phones</a></li>
+            <li><a href="Gaming.html">Gaming</a></li>
+            <li><a href="Headphones.html">Headsets</a></li>
+            <li><a href="Photography & Videography.html">Photography</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-heading">Contact Info</div>
+          <ul class="footer-links">
+            <li>📍 Plot 123, Main Mall, Gaborone</li>
+            <li>📞 +267 71 234 567</li>
+            <li>✉️ info@delroyelectronics.co.bw</li>
+            <li>⏰ Mon–Sat: 8AM – 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Delroy Electronics. All rights reserved. | Gaborone, Botswana</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay"></div>
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h5>🛒 Your Cart</h5>
+      <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-price cart-total-price">BWP 0.00</span>
+      </div>
+      <button class="btn-checkout"
+        onclick="alert('Please contact us to complete your order.')">
+        Checkout →
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-cart">
+    <span>✅</span>
+    <span class="toast-msg"></span>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your Cart JS -->
+  <script src="js/cart.js"></script>
+
 </body>
 </html>
