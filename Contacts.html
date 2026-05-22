@@ -1,42 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delroy Electronics | Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Delroy Electronics in Gaborone." />
+  <title>Delroy Electronics | Contact Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-        <li><a href="Cellphones.html">About</a></li>
-        <li><a href="Computers.html">Laptops</a></li>
-        <li><a href="Contacts.html">Contact</a></li>
-        <li><a href="Gaming.html">Gaming</a></li>
-        <li><a href="Headphones.html">Headphones</a></li>
-        <li><a href="Photography & Videography.html">Photography & Videography</a></li>
-        <li><a href="Products.html">Products</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section>
-    <h2>Get in Touch</h2>
-    <p>Email: info@delroyelectronics.com</p>
-    <p>Phone: +267 123 4567</p>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
-      <input type="submit" value="Send">
-    </form>
+  <div class="top-bar">🔥 Free delivery on orders over BWP 500 | Shop Now & Save Big!</div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">⚡ Delroy Electronics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Computers.html">Laptops</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cellphones.html">Phones</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gaming.html">Gaming</a></li>
+          <li class="nav-item"><a class="nav-link" href="Headphones.html">Headsets</a></li>
+          <li class="nav-item"><a class="nav-link" href="Photography & Videography.html">Photo</a></li>
+          <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Contacts.html">Contact</a></li>
+        </ul>
+        <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
+          🛒 Cart <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <h1>📞 Contact Us</h1>
+      <p>We're here to help — reach out anytime</p>
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a> › <span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section style="padding: 60px 0; background: #f4f6f9;">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- CONTACT INFO CARD -->
+        <div class="col-lg-4">
+          <div style="background: linear-gradient(135deg, #0a0a0a, #1a1a2e); color: white; border-radius: 20px; padding: 40px; height: 100%;">
+            <h4 style="color: #00d4ff; font-weight: 800; margin-bottom: 24px;">Get In Touch</h4>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+              <span style="font-size: 1.4rem;">📍</span>
+              <div>
+                <strong style="display:block; font-size:0.85rem; color:#aaa; margin-bottom:2px;">Our Address</strong>
+                <p style="margin:0;">Plot 123, Main Mall<br>Gaborone, Botswana</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+              <span style="font-size: 1.4rem;">📞</span>
+              <div>
+                <strong style="display:block; font-size:0.85rem; color:#aaa; margin-bottom:2px;">Phone Number</strong>
+                <p style="margin:0;">+267 71 234 567</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+              <span style="font-size: 1.4rem;">✉️</span>
+              <div>
+                <strong style="display:block; font-size:0.85rem; color:#aaa; margin-bottom:2px;">Email Address</strong>
+                <p style="margin:0;">info@delroyelectronics.co.bw</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+              <span style="font-size: 1.4rem;">⏰</span>
+              <div>
+                <strong style="display:block; font-size:0.85rem; color:#aaa; margin-bottom:2px;">Business Hours</strong>
+                <p style="margin:0;">Mon – Fri: 8AM – 6PM<br>Saturday: 9AM – 4PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="col-lg-8">
+          <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+            <h4 style="font-weight: 800; margin-bottom: 24px;">Send Us a Message</h4>
+
+            <!-- SUCCESS / ERROR ALERTS -->
+            <div id="form-success" style="display:none;" class="alert alert-success">
+              ✅ Thank you! Your message has been sent. We'll get back to you within 24 hours.
+            </div>
+            <div id="form-error" style="display:none;" class="alert alert-danger">
+              ❌ Please fill in all required fields correctly.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">
+                    First Name <span style="color:red">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="firstName"
+                    name="firstName" placeholder="e.g. Tumelo"
+                    required minlength="2" maxlength="50" />
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">
+                    Last Name <span style="color:red">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="lastName"
+                    name="lastName" placeholder="e.g. Mokobi"
+                    required minlength="2" maxlength="50" />
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">
+                    Email Address <span style="color:red">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="email"
+                    name="email" placeholder="you@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone"
+                    name="phone" placeholder="+267 71 000 000"
+                    pattern="[+0-9\s\-]{7,15}" />
+                  <div class="invalid-feedback">Please enter a valid phone number.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="subject" class="form-label">
+                    Subject <span style="color:red">*</span>
+                  </label>
+                  <select class="form-select" id="subject" name="subject" required>
+                    <option value="">-- Select a subject --</option>
+                    <option value="order">Place an Order</option>
+                    <option value="support">Technical Support</option>
+                    <option value="warranty">Warranty Claim</option>
+                    <option value="returns">Returns & Refunds</option>
+                    <option value="general">General Enquiry</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">
+                    Message <span style="color:red">*</span>
+                  </label>
+                  <textarea class="form-control" id="message" name="message"
+                    rows="5" placeholder="Tell us how we can help you..."
+                    required minlength="10" maxlength="1000"></textarea>
+                  <div class="invalid-feedback">Please enter your message (min 10 characters).</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox"
+                      id="newsletter" name="newsletter" />
+                    <label class="form-check-label" for="newsletter" style="font-size:0.88rem;">
+                      Subscribe to our newsletter for deals and updates
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <button type="submit" class="btn-primary-custom" style="padding:14px 36px;">
+                    Send Message 📨
+                  </button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Delroy Electronics. All rights reserved.</p>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand">
+            <div class="brand-name">⚡ Delroy Electronics</div>
+            <p>Your trusted electronics partner in Gaborone.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="footer-heading">Categories</div>
+          <ul class="footer-links">
+            <li><a href="Computers.html">Laptops</a></li>
+            <li><a href="Cellphones.html">Phones</a></li>
+            <li><a href="Gaming.html">Gaming</a></li>
+            <li><a href="Headphones.html">Headsets</a></li>
+            <li><a href="Photography & Videography.html">Photography</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer-heading">Contact Info</div>
+          <ul class="footer-links">
+            <li>📍 Plot 123, Main Mall, Gaborone</li>
+            <li>📞 +267 71 234 567</li>
+            <li>✉️ info@delroyelectronics.co.bw</li>
+            <li>⏰ Mon–Sat: 8AM – 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Delroy Electronics. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay"></div>
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h5>🛒 Your Cart</h5>
+      <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-price cart-total-price">BWP 0.00</span>
+      </div>
+      <button class="btn-checkout" onclick="alert('Please contact us to complete your order.')">Checkout →</button>
+    </div>
+  </div>
+
+  <div class="toast-cart">
+    <span>✅</span>
+    <span class="toast-msg"></span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    // HTML5 Form Validation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const success = document.getElementById('form-success');
+      const error = document.getElementById('form-error');
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        success.style.display = 'none';
+        error.style.display = 'block';
+        error.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        form.classList.remove('was-validated');
+        error.style.display = 'none';
+        success.style.display = 'block';
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        form.reset();
+      }
+    });
+  </script>
+
 </body>
 </html>
