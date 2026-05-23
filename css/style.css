@@ -265,8 +265,3 @@ footer { background: #111; color: #aaa; padding: 50px 0 0; }
   .hero-image-box { font-size: 5rem; padding: 30px; }
   .cart-sidebar { width: 100%; }
 }
-.product-img img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-}
